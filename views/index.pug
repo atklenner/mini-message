@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+    each post in posts
+      li
+        div
+          h3= post.text
+          p= post.user
+          p= post.added
+  a(href="/new") New Post
