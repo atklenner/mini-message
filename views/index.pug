@@ -1,13 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  ul
+  h1 Welcome to the zone
+  ul(class="posts")
     each post in posts
       li
-        div
+        div(class="post")
           h3= post.text
           p= post.user
           p= post.added
-  a(href="/new") New Post
+  a(href="/new" class="new-post") New Post

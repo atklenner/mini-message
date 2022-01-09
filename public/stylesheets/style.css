@@ -4,5 +4,24 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.posts {
+  list-style: none;
+}
+
+.post {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 7px black;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
 }
